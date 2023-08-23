@@ -1,0 +1,87 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 3px;
+    box-sizing: border-box;
+}
+
+
+.lohu {
+    float: right;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.lohu:hover {
+    background-color: white;
+    color: blue;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+
+
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+h2 a{
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+h2 a:hover{
+    background-color: #0056b3;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+td a {
+    text-decoration: none;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+td a.update {
+    background-color:rgb(0, 153, 255);
+    color: #fff;
+}
+
+td a.delete {
+    background-color: red;
+    color: #fff;
+}
+
+td a:hover {
+    text-decoration: underline;
+}
+.action{
+    width: 89px;
+}
+
+
+
