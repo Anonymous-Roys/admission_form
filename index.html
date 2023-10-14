@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Form</title>
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="shortcut icon" href="images/fact.png" type="image/x-icon">
+</head>
+<body>
+    <div class="container">
+    <form action="./processes/insert.php" method ="POST">
+        <h2>SOJOY ADMISSION FORM</h2>
+
+        
+
+            <fieldset>
+                <legend>A. Biodata (Ward's details)</legend>
+                <p>Ward's name must correspond to those used for all examinations taken</p>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td><input type="text" name="surname_c" id="surname_c" placeholder="surname *" required></td>
+                        <td><input type="text" name="firstname_c" id="firstname_C" placeholder="Firstname *" required></td>
+                        <td><input type="text" name="othernames_c" id="othernames_c" placeholder="Other Names"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+            
+                        <td><input type="radio" name="gender_c" id="" value="male">Male</td>
+                        <td><input type="radio" name="gender_c" id="" value="female">Female</td>
+                        <td><input type="radio" name="gender_c" id="" value="others">Others </td>
+                    </tr>
+                    <tr>
+                        <td>Enter email(optional):</td>
+                        <td><input type="email" name="email_c" id="email" placeholder="Enter email"></td>
+                    </tr>
+                    <tr>
+                        <td>Date of Birth: </td>
+                        <td><input type="date" name="date_of_birth_c" id="date_of_birth_c" required> Age:</td>
+                    </tr>
+                    <tr>
+                        <td>Place of Birth:</td>
+                        <td><input type="text" name="place_of_birth_c" id="place_of_birth_c" placeholder="Enter place of birth"></td>
+                    </tr>
+                    <tr>
+                        <td>Residential Address:</td>
+                        <td><input type="text" name="residential_address_c" id="residential_address_c" placeholder="Enter Residential Address"></td>
+                        <td><input type="text" name="house_number_c" id="house_number_c" placeholder="Enter House Number  *" required></td>
+                        <td><input type="text" name="street_name_c" id="street_name_c" placeholder="Enter Street/Area name"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            
+            <!-- --------Guardian details----- -->
+            <fieldset>
+                <legend>A. Biodata (Guardian/Parent's details)</legend>
+                <p>Applicant's name must correspond to those used for all examinations taken</p>
+                <table>
+                    <tr>
+                        <td>Title (Mr./Mrs./Ms.)</td>
+                        <td>
+                            <select name="title" id="title">
+                                <option value="">Select...</option>
+                                <option value="Mr.">Mr.</option>
+                                <option value="Mrs.">Mrs.</option>
+                                <option value="Ms.">Ms.</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Name</td>
+                        <td><input type="text" name="surname_p" id="surname_p" placeholder="surname *" required></td>
+                        <td><input type="text" name="firstname_p" id="firstname_p" placeholder="Firstname *" required></td>
+                        <td><input type="text" name="othernames_p" id="othernames_p" placeholder="Other Names"></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+            
+                        <td><input type="radio" name="gender_p" id="" value="degree">Male</td>
+                        <td><input type="radio" name="gender_p" id="" value="diploma">Female</td>
+                        <td><input type="radio" name="gender_p" id="" value="diploma">Others </td>
+                    </tr>
+
+                    <tr>
+                        <td>Age: </td>
+                        <td><input type="number" name="age_p" id="age_p"></td>
+                    </tr>
+
+                    <tr>
+                        <td>Enter email(optional):</td>
+                        <td><input type="email" name="email_p" id="email_p" placeholder="Enter email"></td>
+                    </tr>
+                    
+                    <tr>
+                        <td>Occupation: *</td>
+                        <td><input type="text" name="occupation_p" id="occupation_p" placeholder="Enter Occupation *" required></td>
+                    </tr>
+                    <tr>
+                        <td>Address:</td>
+                        <td><input type="text" name="postal_address_p" id="residential_address_p" placeholder="Enter Residential Address"></td>
+                        <td><input type="text" name="house_number_p" id="house_number_p" placeholder="Enter House Number *" required></td>
+                        <td><input type="text" name="street_name_p" id="street_name_p" placeholder="Enter Street/Area name"></td>
+                    </tr>
+                    <tr>
+                        <td>Mobile Contacts:</td>
+                        <td><input type="text" name="telephone_number_p" id="telephone_number_p" placeholder="Enter Telephone Number *" required></td>
+                        <td><input type="text" name="office_telephone_number_p" id="office_telephone_number_p" placeholder="Enter office Telephone No."></td>
+                        <td><input type="text" name="badge_number_p" id="badge_number_p" placeholder="Enter Badge Number(if any)"></td>
+                    </tr>
+                </table>
+            </fieldset>
+            <!-- <fieldset>
+                <legend>School's offer</legend>
+                <table>
+                    <tr>
+                        <td>Secret Code: </td>
+                        <td><input type="text" name="secret_code" id="secret_code" value="SOJOY-101" readonly></td>
+                    </tr>
+                </table>
+            </fieldset> -->
+                <h3>Declaration</h3>
+                <p>   
+                I ----<>----- hereby declare that I am a legal guardian/parent of -----<>---- and have agreed to enroll him or her at
+                    SOJOY Preparatory School. I hereby promise to abide by all regulations governing the school and also 
+                    to help the Management Committee to the best of my ability
+                </p>
+                <p>Parents/Guardian Signature:..................... <input type="file" name="sign" id="sign"></p>
+                <p>Date: <input type="date" name="date_signed" id="date_signed"></p>
+
+
+            
+            <table>
+                <tr>
+                    <td><input type="submit" value="Submit" name="submit"></td>
+                    <td><input type="reset" value="clear" name="clear"></td>
+                    <td><a href="#"><button>Cancel</button></td>
+                </tr>
+            </table>
+           
+
+    </form>
+    </div>
+</body>
+</html>
+
+
+
