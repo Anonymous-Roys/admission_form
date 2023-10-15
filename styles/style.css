@@ -7,7 +7,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    background-position: 0px -132px;
+   
     background-attachment: fixed;
     font-weight: 600;
     font-size: 20px;
@@ -30,7 +30,9 @@ form div{
 #heading{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
+    display:fixed;
 }
 #heading img{
     width: 120px;
@@ -99,3 +101,11 @@ a{
     text-decoration: none;
 }
 
+@media only screen and (min-width: 1460px){
+    
+    body{background-position: 0px -132px;}
+
+    #heading h2{
+        font-size: 16px;
+    }
+}
