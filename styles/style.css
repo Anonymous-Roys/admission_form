@@ -10,11 +10,12 @@ body {
     background-position: 0px -132px;
     background-attachment: fixed;
     font-weight: 600;
+    font-size: 20px;
 
 }
 
 .container{
-    max-width: 900px;
+    max-width: 1200px;
     margin: 50px auto;
     background-color: #ffffff81;
     padding: 20px;
@@ -53,6 +54,9 @@ input[type="password"] {
     border-radius: 3px;
 }
 
+tr{
+    height: 50px;
+}
 input[type="password"] {
     width: 100%;
 }
