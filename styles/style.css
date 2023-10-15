@@ -1,43 +1,22 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f0f08c;
     margin: 0;
     padding: 0;
-    background: url("../images/bg_img.jpeg");
+    background: url("../images/kids.webp");
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-}
-/* --------navbar--------  */
+    background-position: 0px -132px;
+    background-attachment: fixed;
+    font-weight: 600;
 
-
-
-.lohu{
-    float: right;
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.lohu:hover {
-    background-color: white;
-    color: blue;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.navbar .searchbox{
-    float: right;
-    width: 170px;
-    margin-top: 10px;
-    margin-right: 0px;
 }
 
 .container{
     max-width: 900px;
     margin: 50px auto;
-    background-color: #fff;
+    background-color: #ffffff81;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -47,9 +26,18 @@ form div{
     margin: 20px;
 }
 
+#heading{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#heading img{
+    width: 120px;
+}
 .formgroup {
     margin-bottom: 20px;
 }
+
 
 label {
     display: block;
@@ -85,6 +73,9 @@ input[type="reset"]{
         border-radius: 3px;
         cursor: pointer;
 }
+input[type="reset"]:hover{
+    background-color: #30360e;
+}
 button {
     background-color: #ff0000;
     color: #fff;
@@ -98,7 +89,7 @@ input[type="submit"]:hover{
     background-color: #0056b3;
 }
 .button:hover{
-    background-color: #0056b3;
+    background-color: #012142;
 }
 a{
     text-decoration: none;
