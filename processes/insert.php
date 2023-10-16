@@ -13,14 +13,14 @@ if(isset($_POST['submit'])){
     $username = $_POST['username'];
     $password = $_POST['password'];
     $secret_code = $_POST['secret_code'];
-    $hashedpassword = password_hash($password, PASSWORD_BCRYPT); 
+    
 // || empty($username) || empty($email) || empty($hashedpassword)
-    if (empty($programme) || empty($title) || empty($surname) || empty($firstname) || empty($middlename) || empty($email) || empty($date_of_birth) || empty($place_of_birth) || empty($username) || empty($password)){
+    if (empty($programme) || empty($title) || empty($surname) || empty($firstname) || empty($middlename) || empty($email) || empty($date_of_birth) || empty($place_of_birth) || empty($username)){
         echo "Please fill in the blank spaces";
     }else{
 
-        $query = "INSERT INTO student(programme, title, surname, firstname, middlename, email, date_of_birth, place_of_birth, username, password, secret_code) 
-        VALUES ('$programme', '$title', '$surname',  '$firstname', '$middlename', '$email', '$date_of_birth', '$place_of_birth', '$username', '$hashedpassword', '$secret_code')";
+        $query = "INSERT INTO student(programme, title, surname, firstname, middlename, email, date_of_birth, place_of_birth, username, secret_code) 
+        VALUES ('$programme', '$title', '$surname',  '$firstname', '$middlename', '$email', '$date_of_birth', '$place_of_birth', '$username', '$secret_code')";
 
         $result = mysqli_query($conn, $query);
 
