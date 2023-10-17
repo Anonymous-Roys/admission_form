@@ -6,12 +6,18 @@ if(isset($_POST['submit'])){
     $gender = $_POST['gender_c'];
     $surname = $_POST['surname_c'];
     $firstname = $_POST['firstname_c'];
-    $middlename = $_POST['middlename_c'];
+    $othernames = $_POST['othernames_c'];
     $email = $_POST['email_c'];
     $date_of_birth = $_POST['date_of_birth_c'];
     $place_of_birth = $_POST['place_of_birth_c'];
     $residential_address = $_POST['residential_address_c'];
     $house_number = $_POST['house_number_c'];
+
+
+     $query = "INSERT INTO student(gender, surname, firstname, othernames, email, date_of_birth, place_of_birth, residential_address, secret_code) 
+    VALUES ('$gender', '$title', '$surname',  '$firstname', '$othernames', '$email', '$date_of_birth', '$place_of_birth', '$residential_address', '$secret_code')";
+
+    $result1 = mysqli_query($conn, $query1);
 
 
 // ----------parent's Info ---------
@@ -20,20 +26,20 @@ if(isset($_POST['submit'])){
     $title = $_POST['title_p'];
     $surname = $_POST['surname_p'];
     $firstname = $_POST['firstname_p'];
-    $middlename = $_POST['middlename_p'];
+    $othernames = $_POST['othernames_p'];
     $email = $_POST['email_p'];
     $date_of_birth = $_POST['date_of_birth_p'];
     $place_of_birth = $_POST['place_of_birth_p'];
     $residential_address = $_POST['residential_address_p'];
-    $house_number = $_POST['house_number_c'];
+    $house_number = $_POST['house_number_p'];
     
 // || empty($residential_address) || empty($email) || empty($house_number)
 
 
-    $query = "INSERT INTO student(gender, title, surname, firstname, middlename, email, date_of_birth, place_of_birth, residential_address, secret_code) 
-    VALUES ('$gender', '$title', '$surname',  '$firstname', '$middlename', '$email', '$date_of_birth', '$place_of_birth', '$residential_address', '$secret_code')";
+    $query2 = "INSERT INTO student(gender, title, surname, firstname, othernames, email, date_of_birth, place_of_birth, residential_address, secret_code) 
+    VALUES ('$gender', '$title', '$surname',  '$firstname', '$othernames', '$email', '$date_of_birth', '$place_of_birth', '$residential_address', '$secret_code')";
 
-    $result = mysqli_query($conn, $query);
+    $result2 = mysqli_query($conn, $query2);
 
     if($result){
         header("Location: view.php");
