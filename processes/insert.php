@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
     $house_number = $_POST['house_number_c'];
 
 
-     $query = "INSERT INTO student(gender_c, surname_c, firstname_c, othernames_c, email_c, date_of_birth_c, place_of_birth_c, residential_address_c) 
+     $query = "INSERT INTO students(gender_c, surname_c, firstname_c, othernames_c, email_c, date_of_birth_c, place_of_birth_c, residential_address_c) 
     VALUES ('$gender_c','$surname_c',  '$firstname_c', '$othernames_c', '$email_c', '$date_of_birth_c', '$place_of_birth_c', '$residential_address_c')";
 
     $result1 = mysqli_query($conn, $query1);
@@ -36,8 +36,8 @@ if(isset($_POST['submit'])){
 // || empty($residential_address) || empty($email) || empty($house_number)
 
 
-    $query2 = "INSERT INTO student(gender, title, surname, firstname, othernames, email, date_of_birth, place_of_birth, residential_address, secret_code) 
-    VALUES ('$gender', '$title', '$surname',  '$firstname', '$othernames', '$email', '$date_of_birth', '$place_of_birth', '$residential_address', '$secret_code')";
+    $query2 = "INSERT INTO parents(gender_p, title_p, surname_p, firstname_p, othernames_p, email_p, date_of_birth_p, place_of_birth_p, residential_address_p) 
+    VALUES ('$gender_p', '$title_p', '$surname_p',  '$firstname_p', '$othernames_p', '$email_p', '$date_of_birth_p', '$place_of_birth_p', '$residential_address_p')";
 
     $result2 = mysqli_query($conn, $query2);
 
